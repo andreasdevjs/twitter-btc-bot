@@ -1,5 +1,5 @@
 # twitter-btc-bot
-Twitter bot for @BTC2Infinite
+Twitter bot for [@BTC2Infinite](https://twitter.com/BTC2Infinite)
 
 ![alt text](https://i.ibb.co/ws7hQRw/Bitcoin-road-to-100-000.png "Bitcoin 100K Bot")
 
