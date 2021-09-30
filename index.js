@@ -86,7 +86,7 @@ const makeTweet = async function () {
 }
 
 // Run cron at 16.30 New York timezone
-const task = cron.schedule('30 16 * * *', () => {
+const task = cron.schedule('35 14 * * *', () => {
   console.log('Running Tweet Cron');
   makeTweet();
 },{ timezone : "America/New_York" });
