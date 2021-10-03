@@ -7,7 +7,7 @@ This repository contains code from the @BTC2Infinite account. This is a @year_pr
 
 1 sat = 1 cent
 
-What will come after the $100,000? 👀
+What will come after the $1,000,000? 👀
 
 
 
