@@ -1,9 +1,11 @@
 # twitter-btc-bot
 Twitter bot for [@BTC2Infinite](https://twitter.com/BTC2Infinite)
 
-![alt text](https://i.ibb.co/ws7hQRw/Bitcoin-road-to-100-000.png "Bitcoin 100K Bot")
+![alt text](https://i.ibb.co/NLvw5Kv/Bitcoin-road-1-000-000.png "Bitcoin $1MM Bot")
 
-This repository contains code from the @BTC2Infinite account. This is a @year_progress style bot that will tell us day by day what percentage the bitcoin is at to reach $100,000.
+This repository contains code from the @BTC2Infinite account. This is a @year_progress style bot that will tell us day by day what percentage the bitcoin is at to reach $1,000,000. At this price, 1 satoshi is equivalent to 1 cent.
+
+1 sat = 1 cent
 
 What will come after the $100,000? 👀
 
