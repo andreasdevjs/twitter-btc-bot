@@ -4,7 +4,7 @@ import cron from 'node-cron';
 
 
 const fromPriceToPorcentage = (price) => {
-  return price / 1000;
+  return price / 1_000_000;
 }
 
 const getBitcoinPrice = async () => {
@@ -12,6 +12,7 @@ const getBitcoinPrice = async () => {
     const response = await axios.get('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd');
     const data = await response.data;
     const price = data.bitcoin.usd;
+    console.log('BTC Price: ', price);
     return price;
   } catch (error) {
     console.error(error);
@@ -71,7 +72,10 @@ const buildTweetString = (porcentage) => {
   }
 
   const tweetString = generate(porcentage);
-  return `${tweetString.str} ${Math.round(porcentage)}%`;
+  const finalTweetContent = `${tweetString.str} ${(porcentage * 100).toFixed(2)}%`;
+  console.log('Tweet Content: ', finalTweetContent)
+  
+  return finalTweetContent;
 }
 
 const makeTweet = async function () {
@@ -86,7 +90,7 @@ const makeTweet = async function () {
 }
 
 // Run cron at 16.30 New York timezone
-const task = cron.schedule('35 14 * * *', () => {
+const task = cron.schedule('30 16 * * *', () => {
   console.log('Running Tweet Cron');
   makeTweet();
 },{ timezone : "America/New_York" });
